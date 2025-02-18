@@ -1,0 +1,9 @@
+{% extends 'pages/base.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block header_title %} {{subtitle}} {% endblock %}
+{% block content %}
+<div class="container text-center mt-5">
+    <h1 class="text-success" role="alert">Product created successfully</h1> 
+    <a href="{% url 'index' %}" class="btn bg-primary text-white">Continue</a>
+</div>
+{% endblock %}
